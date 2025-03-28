@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { Image } from "astro:assets";
+---
+
+<BaseLayout title="CreativeLead" sideBarActiveItemID="creativelead">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Madhu</div>
+  </div>
+  <Image
+      src="/creativelead.png"
+      class="w-full"
+      alt="collaborate"
+      width="1200"
+      height="1200"
+    />
+  <div class="grow w-full flex-col md:flex-row">
+    <p class="py-1 text-1xl">Our Creative Lead at illuminanzz!</p>
+    <p class="py-1 text-1xl">
+      With a passion for languages, literature, and an insatiable curiosity
+      about diverse cultures, Madhu brings a unique perspective to the team. His
+      interests extend beyond dance genres, reflecting a love for exploring
+      various art forms. Whether delving into creative pursuits or unraveling
+      the intricate connections between cultures and the natural world, Madhu's
+      vibrant spirit enriches our creative endeavors at illuminanzz.
+    </p>
+    <p class="py-1 text-1xl">
+      As the Creative Lead, Madhu oversees the artistic direction and innovative
+      elements of our projects at illuminanzz. His responsibilities include
+      orchestrating engaging performances, infusing cultural richness into our
+      events, and pushing the boundaries of creativity across various artistic
+      mediums. Madhu's keen eye for detail and passion for cross-cultural
+      exploration contribute to the unique and captivating experiences we aim to
+      deliver.
+    </p>
+  </div>
+</BaseLayout>

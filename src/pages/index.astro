@@ -2,9 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
+import createSlug from "../lib/createSlug";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 
 const last_posts = posts.slice(0, 3);
 ---
@@ -12,33 +14,21 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-5xl font-bold">Illuminanzz</div>
-    <div class="text-3xl py-3 font-bold">Dance for Love, Life and Longevity</div>
-    <div class="py-2">
-      <text class="text-lg">
-       Description goes here
-      </text>
+    <div class="text-3xl py-3 font-bold">
+      Dance for Love, Life and Longevity
     </div>
-  
+    <div class="py-2">
+      <!-- <text class="text-lg"> Description goes here </text> -->
+    </div>
   </div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-2">Team</div>
   </div>
 
-  <HorizontalCard
-    title="Founder"
-    img="/illuminanzz.png"
-    desc="Founder bio"
-    url="#"
-    
-  />
+  <HorizontalCard title="Veeanta" desc="Founder" url="/evolution" />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Creative Lead"
-    img="/illuminanzz.png"
-    desc="Creative lead bio"
-    url="#"
-  />
-
-
+  <HorizontalCard title="Madhu" desc="Creative Lead" url="/creativelead" />
+  <div class="divider my-0"></div>
+  <HorizontalCard title="Zesh Elizabeth" desc="Ambassador" url="/ambassador" />
 </BaseLayout>

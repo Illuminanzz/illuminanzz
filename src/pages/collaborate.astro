@@ -1,42 +1,100 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import { Image } from "astro:assets";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Colloborate</div>
+    <div class="text-3xl w-full font-bold mb-5">Collaborate</div>
   </div>
+  <br></br>
+  <Image
+      src="/collaborate.png"
+      class="w-full"
+      alt="collaborate"
+      width="1200"
+      height="1200"
+    />
   <div class="grow w-full flex-col md:flex-row">
-    <h3> Collaborate as a Featured Artist with iLLUMINANZZ </h3>
-
-    <p class="py-1 text-1xl">talent? 
-iLLUMINANZZ invites skilled artists to collaborate and conduct workshops/classes in various art forms, particularly in Salsa, Bachata, Kizomba, Tango, Zouk, and more.
-This collaboration opens the door to a vibrant, multicultural community eager to learn, engage, and appreciate diverse art forms. By joining forces with iLLUMINANZZ, you get the chance to expand your reach, inspire a dynamic audience, and contribute to a thriving creative ecosystem.
-</p>
-     <h3> Why Collaborate with iLLUMINANZZ? </h3>
-     <p>     •	Connect with a Diverse Audience: Reach a broad, multicultural community passionate about dance and artistic expression.
-•	Expand Your Influence: Position yourself as a leader in your art form and create meaningful impact.
-•	Transparent Partnership: A well-structured commercial sharing plan ensures clarity on promotions, studio space, financial arrangements, and essential resources.
-•	Grow with a Supportive Network: Collaborate with like-minded artists, gain exposure, and enhance your artistic journey.
-</p>
-     <h3> Collaboration Models</h3>
-     <p> We offer three flexible collaboration models designed to cater to different levels of expertise and engagement:
-1. Co-Creation & Training Model
-In this model, both iLLUMINANZZ and the partner artist contribute to various aspects, including teaching, space rental, and promotional efforts. Each party's contributions are evaluated, and revenue distribution is determined accordingly to ensure a fair and balanced collaboration.
-2. Established Artist Partnership
-This model is tailored for experienced artists looking to train a group under the iLLUMINANZZ umbrella. The instructor receives a fixed fee for their services, based on their expertise, reputation, and the specific training program.
-3. Aspiring Artist Launch
-Designed for emerging artists, this model provides an opportunity to gain exposure and recognition. Aspiring artists pay a fixed amount for access to studio space, promotional support, and the prestige of being launched under the iLLUMINANZZ banner. This model helps new artists establish themselves while leveraging the credibility and branding benefits of iLLUMINANZZ.
-</p>
-  <p> Join Us Today! If you’re ready to collaborate, inspire, and make a difference through your art, we’d love to hear from you. Email us at celebrate@veeanta.com </p>
-
-
     
+    <h3><b>Collaborate as a Featured Artist with iLLUMINANZZ </b></h3>
+
+    <p class="py-1 text-1xl">
+      Are you a passionate and enthusiastic artist looking for an opportunity to
+      showcase your talent?
+    </p>
+    <p class="py-1 text-1xl">
+      iLLUMINANZZ invites skilled artists to collaborate and conduct
+      workshops/classes in various art forms, particularly in Salsa, Bachata,
+      Kizomba, Tango, Zouk, and more.
+    </p>
+    <p class="py-1 text-1xl">
+      This collaboration opens the door to a vibrant, multicultural community
+      eager to learn, engage, and appreciate diverse art forms. By joining
+      forces with iLLUMINANZZ, you get the chance to expand your reach, inspire
+      a dynamic audience, and contribute to a thriving creative ecosystem.
+    </p>
+    <br></br>
+    <h3><b>Why Collaborate with iLLUMINANZZ?</b></h3>
+    <p class="py-1 text-1xl">
+      <ul>
+        • <span class="underline">Connect with a Diverse Audience : </span> Reach
+        a broad, multicultural community passionate about dance and artistic expression.
+      </ul>
+      <ul>
+        • <span class="underline">Expand Your Influence : </span> Position yourself
+        as a leader in your art form and create meaningful impact.
+      </ul>
+      <ul>
+        • <span class="underline">Transparent Partnership : </span>A
+        well-structured commercial sharing plan ensures clarity on promotions,
+        studio space, financial arrangements, and essential resources.
+      </ul>
+      <ul>
+        • <span class="underline">
+          Grow with a Supportive Network :
+        </span>Collaborate with like-minded artists, gain exposure, and enhance
+        your artistic journey.
+      </ul>
+    </p>
+    <br></br>
+    <h3><b>Collaboration Models</b></h3>
+    <p class="py-1 text-1xl">
+      We offer three flexible collaboration models designed to cater to
+      different levels of expertise and engagement:
+      <ol class="py-1 text-1xl">
+        <p>1.<span class="underline"> Co-Creation & Training Model</span> </p>
+        <p  class="py-1 text-1xl" >In this model, both iLLUMINANZZ and the
+          partner artist contribute to various aspects, including teaching, space
+          rental, and promotional efforts. Each party's contributions are
+          evaluated, and revenue distribution is determined accordingly to ensure
+          a fair and balanced collaboration.</p>
+        
+      </ol>
+      <ol class="py-1 text-1xl">
+        <p>2. <span class="underline">Established Artist Partnership</span></p> 
+        <p  class="py-1 text-1xl">This model is tailored for experienced
+          artists looking to train a group under the iLLUMINANZZ umbrella. The
+          instructor receives a fixed fee for their services, based on their
+          expertise, reputation, and the specific training program.</p>
+      </ol>
+      <ol class="py-1 text-1xl">
+        <p>3. <span class="underline">Aspiring Artist Launch</span> </p>
+        <p  class="py-1 text-1xl">Designed for emerging artists, this model
+          provides an opportunity to gain exposure and recognition. Aspiring
+          artists pay a fixed amount for access to studio space, promotional
+          support, and the prestige of being launched under the iLLUMINANZZ
+          banner. This model helps new artists establish themselves while
+          leveraging the credibility and branding benefits of iLLUMINANZZ.</p>
+      </ol>
+    </p>
+    <p>
+      <b>Join Us Today! </b>If you’re ready to collaborate, inspire, and make a
+      difference through your art, we’d love to hear from you. Email us at
+      celebrate@veeanta.com
+    </p>
   </div>
 
-  
   <div class="divider my-0"></div>
-
-
 </BaseLayout>
