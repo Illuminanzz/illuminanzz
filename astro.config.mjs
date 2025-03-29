@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://veeanta.com',
+  site: 'https://illuminanzz.veeanta.com',
   integrations: [mdx(), sitemap(), tailwind()]
 });
